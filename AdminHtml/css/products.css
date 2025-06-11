@@ -1,0 +1,158 @@
+/* Products specific styles */
+.product-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.product-info h6 {
+  margin: 0 0 3px 0;
+  font-weight: 600;
+  color: var(--dark-color);
+  font-size: 0.9rem;
+}
+
+.product-info small {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.current-price {
+  font-weight: 600;
+  color: var(--success-color);
+  font-size: 0.9rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.stock-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stock-number {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.stock-info.stock-low .stock-number {
+  color: var(--warning-color);
+}
+
+.stock-info.stock-out .stock-number {
+  color: var(--danger-color);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.action-buttons .btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal styles */
+.modal-lg {
+  max-width: 900px;
+}
+
+.upload-area {
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--light-color);
+}
+
+.upload-area:hover {
+  border-color: var(--primary-color);
+  background: rgba(0, 123, 255, 0.05);
+}
+
+.upload-area i {
+  font-size: 2rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.upload-area p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Pagination */
+.pagination {
+  margin: 20px 0 0 0;
+}
+
+.page-link {
+  color: var(--primary-color);
+  border-color: var(--border-color);
+  padding: 8px 12px;
+}
+
+.page-link:hover {
+  color: var(--primary-color);
+  background-color: var(--light-color);
+  border-color: var(--border-color);
+}
+
+.page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.page-item.disabled .page-link {
+  color: var(--text-muted);
+  background-color: white;
+  border-color: var(--border-color);
+}
+
+/* Responsive adjustments for products page */
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .product-thumb {
+    width: 40px;
+    height: 40px;
+  }
+
+  .table-responsive {
+    font-size: 0.8rem;
+  }
+
+  .upload-area {
+    padding: 20px;
+  }
+
+  .upload-area i {
+    font-size: 1.5rem;
+  }
+}
