@@ -1,0 +1,81 @@
+/* About Page Specific Styles */
+
+.about-section {
+  background: var(--bg-primary);
+  padding: 80px 0;
+}
+
+.about-section h2 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.about-section .lead {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.about-section p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.about-section img {
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.values-section {
+  background: var(--bg-secondary) !important;
+  padding: 80px 0;
+}
+
+.values-section h2 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.values-section .value-item {
+  padding: 40px 24px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center;
+}
+
+.values-section .value-item:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.values-section .value-item i {
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.values-section .value-item h4 {
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.values-section .value-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .values-section {
+    padding: 60px 0;
+  }
+}
